@@ -1,7 +1,7 @@
 {
-  "name": "natours",
+  "name": "Trillo",
   "version": "1.0.0",
-  "description": "landing page for natours",
+  "description": "The Trillo app",
   "main": "index.js",
   "scripts": {
     "live-server": "live-server",
@@ -10,7 +10,7 @@
     "compile:sass": "node-sass scss/main.scss dist/css/main.comp.css",
     "prefix:css": "postcss --use autoprefixer -b \"last 10 versions\" dist/css/main.comp.css -o dist/css/main.prefix.css",
     "compress:css": "node-sass dist/css/main.prefix.css dist/css/main.min.css --output-style compressed",
-    "build:css": "npm-run-all compile:sass concat:css prefix:css compress:css"
+    "build:css": "npm-run-all compile:sass prefix:css compress:css"
   },
   "author": "Momin",
   "license": "ISC",
