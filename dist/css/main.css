@@ -54,6 +54,37 @@ body {
   line-height: 1.6;
   color: var(--color-body-text); }
 
+.search__input {
+  color: inherit; }
+
+.search__button {
+  color: inherit; }
+
+.search__icon {
+  width: 2rem;
+  height: 2rem; }
+
+.user-nav__icon-box {
+  color: inherit; }
+
+.user-nav__icon {
+  width: 2.25rem;
+  height: 2.25rem; }
+
+.user-nav__notification {
+  color: inherit; }
+
+.user-nav__user {
+  color: inherit; }
+
+.user-nav__user-photo {
+  width: 3.75rem;
+  height: 3.75rem;
+  border-radius: 50%; }
+
+.user-nav__user-name {
+  color: inherit; }
+
 .container {
   display: flex;
   flex-direction: column;
