@@ -7,8 +7,8 @@
   --color-grey-light-3: #f0eeee;
   --color-grey-light-4: #ccc;
   --color-grey-dark-1: #333;
-  --color-grey-dark-3: #777;
-  --color-grey-dark-4: #999;
+  --color-grey-dark-2: #777;
+  --color-grey-dark-3: #999;
   --color-body-text: #444;
   --color-white: #fff;
   --color-black: #000;
@@ -93,13 +93,43 @@ body {
     fill: var(--color-grey-dark-3); }
 
 .user-nav {
-  background: greenyellow; }
+  background: var(--color-white);
+  align-self: stretch;
+  display: flex;
+  align-items: center; }
+  .user-nav > * {
+    height: 100%;
+    padding: 0 2rem;
+    display: flex;
+    align-items: center; }
+    .user-nav > *:hover {
+      background: var(--color-grey-light-2);
+      cursor: pointer; }
+  .user-nav__icon-box {
+    position: relative; }
   .user-nav__icon {
-    width: 2.25rem;
-    height: 2.25rem; }
+    width: 2.5rem;
+    height: 2.5rem;
+    fill: var(--color-grey-dark-2); }
+  .user-nav__notification {
+    font-size: 0.9rem;
+    position: absolute;
+    top: 1.3rem;
+    right: 1.1rem;
+    width: 1.75rem;
+    height: 1.75rem;
+    color: var(--color-white);
+    background: var(--color-primary);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
   .user-nav__user-photo {
     height: 3.75rem;
-    border-radius: 50%; }
+    border-radius: 50%;
+    margin-right: 1rem; }
+  .user-nav__user-name {
+    font-size: 1.6rem; }
 
 .container {
   display: flex;
@@ -124,7 +154,7 @@ body {
 
 .logo {
   height: 3.25rem;
-  margin-left: 3rem; }
+  margin-left: 2rem; }
 
 .hotel-view {
   background: var(--color-white);
