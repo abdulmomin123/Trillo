@@ -3,7 +3,10 @@
 @import "base/base";
 @import "base/typography";
 
-@import "layout/container_&_content";
+@import "components/search-box";
+@import "components/user-navigation";
+
+@import "layout/flex_containers";
 @import "layout/header";
 @import "layout/hotel-view";
 @import "layout/sidebar";
