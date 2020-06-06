@@ -1,14 +1,29 @@
+// Abstracts
 @import "abstracts/variables";
 
+// Base
 @import "base/base";
 @import "base/typography";
 
+// Components
+@import "components/btn-primary";
+@import "components/btn-secondary";
+@import "components/description";
+@import "components/gallery";
+@import "components/hotel-view";
+@import "components/overview";
+@import "components/recommend";
+@import "components/review";
 @import "components/search-box";
 @import "components/user-navigation";
 
+// Layout
+@import "layout/cta";
+@import "layout/detail";
 @import "layout/flex_containers";
 @import "layout/header";
-@import "layout/hotel-view";
 @import "layout/sidebar";
+@import "layout/user-reviews";
 
+// Pages
 @import "pages/home";
