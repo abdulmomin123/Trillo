@@ -175,9 +175,27 @@ body {
       margin: 0 0 3rem; } }
 
 .gallery {
-  display: flex; }
+  padding: 1rem;
+  background: rgba(235, 47, 100, 0.3);
+  display: flex;
+  justify-content: space-between; }
+  .gallery__item {
+    display: flex;
+    flex: 0 0 32.5%; }
+  .gallery__item-link {
+    display: flex; }
   .gallery__photo {
-    width: 100%; }
+    display: inline-block;
+    width: 100%;
+    border-radius: 4px;
+    transition: transform 0.4s, filter 0.2s;
+    backface-visibility: hidden;
+    cursor: pointer; }
+    .gallery__photo:hover {
+      transform: scale(1.03);
+      filter: brightness(75%); }
+    .gallery__photo:active {
+      transform: scale(1); }
 
 .overview {
   display: flex;
