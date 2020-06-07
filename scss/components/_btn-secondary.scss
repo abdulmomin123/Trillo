@@ -3,14 +3,14 @@
   display: inline-block;
   border: none;
   background: transparent;
-  color: var(--color-primary);
+  color: $color-primary;
   border-bottom: 1px solid currentColor;
   padding-bottom: 2px;
   cursor: pointer;
   transition: all 0.2s;
 
   &:hover {
-    color: var(--color-grey-dark-1);
+    color: $color-grey-dark-1;
     animation: pulsate 1s infinite;
   }
 
@@ -29,9 +29,9 @@
     }
 
     &:hover {
-      color: var(--color-grey-dark-1);
+      color: $color-grey-dark-1;
       animation: none;
-      box-shadow: 0 1rem 3rem rgba(#000, 0.2);
+      box-shadow: $box-shadow-btn-sec;
 
       span {
         margin-left: 1rem;
@@ -48,7 +48,7 @@
 
   50% {
     transform: scale(1.05);
-    box-shadow: 0 1rem 2rem rgba($color: #000000, $alpha: 0.2);
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
   }
 
   100% {

@@ -8,7 +8,7 @@
     font-family: inherit;
     font-size: inherit;
     color: inherit;
-    background: var(--color-grey-light-2);
+    background: $color-grey-light-2;
     border: none;
     width: 90%;
     margin-right: -3.25rem;
@@ -18,13 +18,21 @@
 
     &:focus {
       width: 100%;
-      background: var(--color-grey-light-3);
+      background: $color-grey-light-3;
       outline: none;
+
+      @include respond(phone-small) {
+        width: 95%;
+      }
     }
 
     &::-webkit-input-placeholder {
       font-weight: 100;
-      color: var(--color-grey-light-4);
+      color: $color-grey-light-4;
+    }
+
+    @include respond(phone-small) {
+      margin-left: -2rem;
     }
   }
 
@@ -48,6 +56,12 @@
   &__icon {
     width: 2rem;
     height: 2rem;
-    fill: var(--color-grey-dark-3);
+    fill: $color-grey-dark-3;
+  }
+
+  @include respond(phone-small) {
+    order: 1;
+    flex: 0 0 100%;
+    margin: 0.5rem 0 1rem;
   }
 }

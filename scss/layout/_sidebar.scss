@@ -1,9 +1,21 @@
 .sidebar {
-  background: var(--color-grey-dark-1);
+  background: $color-grey-dark-1;
   flex: 0 0 20%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  @include respond(tab-land) {
+    flex: 0 0 18%;
+  }
+
+  @include respond(tab-port) {
+    flex-direction: row;
+  }
+
+  span {
+    text-align: center;
+  }
 
   .side-nav {
     font-size: 1.4rem;
@@ -23,7 +35,7 @@
         left: 0;
         width: 3px;
         height: 100%;
-        background: var(--color-primary);
+        background: $color-primary;
         transform: scaleY(0);
         transition: background 0.1s, transform 0.2s,
           width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s;
@@ -36,7 +48,12 @@
       }
 
       &:active::before {
-        background: var(--color-primary-light);
+        background: $color-primary-light;
+      }
+
+      @include respond(tab-port) {
+        flex: 1;
+        margin-bottom: 0 !important;
       }
     }
 
@@ -45,28 +62,52 @@
       height: 1.75rem;
       margin-right: 2rem;
       fill: currentColor;
+
+      @include respond(phone) {
+        margin-right: 0;
+        margin-bottom: 0.5rem;
+      }
     }
 
     &__link {
       &:link,
       &:visited {
         position: relative;
-        display: block;
         padding: 1.5rem 3rem;
-        color: var(--color-grey-light-1);
+        color: $color-grey-light-1;
         text-decoration: none;
         text-transform: uppercase;
         display: flex;
+        justify-content: center;
         align-items: center;
         z-index: 1;
       }
+
+      @include respond(tab-port) {
+        padding: 2rem 3rem !important;
+      }
+
+      @include respond(phone) {
+        flex-direction: column;
+        padding: 1.5rem 0.5rem;
+      }
+    }
+
+    @include respond(tab-port) {
+      flex: 1;
+      display: flex;
+      margin: 0 !important;
     }
   }
 
   .legal {
     font-size: 1.2rem;
     padding: 2.5rem;
-    color: var(--color-grey-light-4);
+    color: $color-grey-light-4;
     text-align: center;
+
+    @include respond(tab-port) {
+      display: none;
+    }
   }
 }

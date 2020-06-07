@@ -1,7 +1,7 @@
 .review {
   position: relative;
-  background: var(--color-white);
-  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.06);
+  background: $color-white;
+  box-shadow: $box-shadow-comp;
   padding: 3rem;
   margin-bottom: 3.5rem;
   overflow: hidden;
@@ -12,9 +12,9 @@
     top: -2.5rem;
     left: -1rem;
     font-family: sans-serif;
-    font-size: 20rem;
+    font-size: $quote-symbol-font-size;
     line-height: 1;
-    color: var(--color-grey-light-2);
+    color: $color-grey-light-2;
     z-index: 1;
   }
 
@@ -50,12 +50,17 @@
 
   &__user-date {
     font-size: 1rem;
-    color: var(--color-grey-dark-3);
+    color: $color-grey-dark-3;
   }
 
   &__rating {
     font-size: 2.2rem;
     font-weight: 300;
-    color: var(--color-primary);
+    color: $color-primary;
+  }
+
+  @include respond(tab-port) {
+    padding: 2rem;
+    margin-bottom: 2.5rem;
   }
 }

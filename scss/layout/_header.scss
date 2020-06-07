@@ -1,8 +1,8 @@
 .header {
   font-size: 1.4rem;
-  background: var(--color-white);
+  background: $color-white;
   height: 7rem;
-  border-bottom: 1px solid var(--color-grey-light-2);
+  border-bottom: $border-comp;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -10,5 +10,10 @@
   &__logo {
     height: 3.25rem;
     margin-left: 2rem;
+  }
+
+  @include respond(phone-small) {
+    flex-wrap: wrap;
+    height: auto;
   }
 }

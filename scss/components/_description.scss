@@ -1,9 +1,11 @@
 .description {
   flex: 0 0 60%;
   margin-right: 4.5rem;
-  background: var(--color-white);
-  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.06);
+  background: $color-white;
+  box-shadow: $box-shadow-comp;
   padding: 3rem;
+  display: flex;
+  flex-direction: column;
 
   &__text {
     &:not(:last-of-type) {
@@ -15,8 +17,8 @@
     list-style: none;
     margin: 3rem 0;
     padding: 3rem 0;
-    border-top: 1px solid var(--color-grey-light-2);
-    border-bottom: 1px solid var(--color-grey-light-2);
+    border-top: $border-comp;
+    border-bottom: $border-comp;
     display: flex;
     flex-wrap: wrap;
   }
@@ -33,11 +35,24 @@
       margin-right: 0.7rem;
       // background: url(/dist/img/chevron-thin-right.svg);
       // background-size: cover;
-      background: var(--color-primary);
+      background: $color-primary;
       -webkit-mask: url(/dist/img/chevron-thin-right.svg);
       -webkit-mask-size: cover;
       mask: url(/dist/img/chevron-thin-right.svg);
       mask-size: cover;
     }
+
+    @include respond(tab-land) {
+      font-size: 1.2rem;
+    }
+  }
+
+  @include respond(tab-port) {
+    padding: 2rem;
+    margin-right: 3rem;
+  }
+
+  @include respond(phone) {
+    margin: 0 0 3rem;
   }
 }

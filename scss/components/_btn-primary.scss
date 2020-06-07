@@ -5,11 +5,11 @@
   border: none;
   border-radius: 100px;
   padding: 2rem 7.5rem;
-  color: var(--color-white);
+  color: $color-white;
   background: linear-gradient(
     to right,
-    var(--color-primary-light),
-    var(--color-primary-dark)
+    $color-primary-light,
+    $color-primary-dark
   );
   overflow: hidden;
   cursor: pointer;
@@ -37,10 +37,10 @@
   &:hover {
     background: linear-gradient(
       to left,
-      var(--color-primary-light),
-      var(--color-primary-dark)
+      $color-primary-light,
+      $color-primary-dark
     );
-    box-shadow: 0 2rem 3rem rgba(#000, 0.2);
+    box-shadow: $box-shadow-btn;
   }
 
   &:hover &__invisible {

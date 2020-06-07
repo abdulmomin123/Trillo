@@ -1,5 +1,6 @@
 // Abstracts
 @import "abstracts/variables";
+@import "abstracts/mixins";
 
 // Base
 @import "base/base";
@@ -10,7 +11,6 @@
 @import "components/btn-secondary";
 @import "components/description";
 @import "components/gallery";
-@import "components/hotel-view";
 @import "components/overview";
 @import "components/recommend";
 @import "components/review";
@@ -21,7 +21,9 @@
 @import "layout/cta";
 @import "layout/detail";
 @import "layout/flex_containers";
+@import "layout/footer";
 @import "layout/header";
+@import "layout/hotel-view";
 @import "layout/sidebar";
 @import "layout/user-reviews";
 
