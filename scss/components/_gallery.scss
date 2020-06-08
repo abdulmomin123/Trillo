@@ -5,29 +5,55 @@
   justify-content: space-between;
 
   &__item {
+    position: relative;
     display: flex;
     flex: 0 0 32.5%;
+    transition: transform 0.4s, filter 0.2s;
+    backface-visibility: hidden;
+    cursor: pointer;
+    overflow: hidden;
+
+    &-photo {
+      display: block;
+      width: 100%;
+      border-radius: 4px;
+      transition: all 0.5s;
+    }
+
+    &-name {
+      font-size: 2.5rem;
+      color: $color-white;
+      font-weight: 300;
+      width: 100%;
+      text-align: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(0);
+      backface-visibility: hidden;
+      visibility: hidden;
+      transition: all 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    }
+
+    &:hover {
+      transform: scale(1.03);
+    }
+
+    &:hover &-photo {
+      filter: brightness(50%) blur(0.8rem);
+    }
+
+    &:hover &-name {
+      visibility: visible;
+      transform: translate(-50%, -50%) scale(1);
+    }
+
+    &:hover & &:active {
+      transform: scale(1);
+    }
   }
 
   &__item-link {
     display: flex;
-  }
-
-  &__photo {
-    display: inline-block;
-    width: 100%;
-    border-radius: 4px;
-    transition: transform 0.4s, filter 0.2s;
-    backface-visibility: hidden;
-    cursor: pointer;
-
-    &:hover {
-      transform: scale(1.03);
-      filter: brightness(75%);
-    }
-
-    &:active {
-      transform: scale(1);
-    }
   }
 }

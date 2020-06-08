@@ -12,7 +12,6 @@
 
     &:hover {
       background: $color-grey-light-2;
-      cursor: pointer;
     }
 
     @include respond(phone-small) {
@@ -22,6 +21,12 @@
 
   &__icon-box {
     position: relative;
+    cursor: pointer;
+
+    &:hover .user-nav__menu {
+      visibility: visible;
+      transform: translateX(-50%) scale(1);
+    }
   }
 
   &__icon {
