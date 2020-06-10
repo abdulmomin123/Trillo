@@ -50,6 +50,13 @@
     align-items: center;
   }
 
+  &__user {
+    &:hover .user-nav__menu--user {
+      visibility: visible;
+      transform: translateX(-50%) scale(0.9);
+    }
+  }
+
   &__user-photo {
     height: 3.75rem;
     border-radius: 50%;
