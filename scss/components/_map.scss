@@ -1,0 +1,15 @@
+.map {
+  //   display: none;
+  //   transform: scaleY(0);
+  transition: all 1s;
+  padding: 1rem;
+  background: rgba($color-primary, 0.3);
+
+  &:target {
+    display: initial;
+    transform: scaleY(1);
+  }
+
+  &__map {
+  }
+}

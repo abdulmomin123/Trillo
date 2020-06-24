@@ -23,7 +23,8 @@ big-desk: 1800px
 
 html {
   font-size: 62.5%;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  scroll-behavior: smooth; }
   @media only screen and (min-width: 112.5em) {
     html {
       font-size: 75%; } }
@@ -222,6 +223,14 @@ body {
       transform: scale(1); }
   .gallery__item-link {
     display: flex; }
+
+.map {
+  transition: all 1s;
+  padding: 1rem;
+  background: rgba(235, 47, 100, 0.3); }
+  .map:target {
+    display: initial;
+    transform: scaleY(1); }
 
 .overview {
   display: flex;
@@ -462,7 +471,9 @@ body {
         background: rgba(51, 51, 51, 0.15); } }
     .user-nav__menu--user .icon {
       width: 2.5rem;
-      height: 2.5rem; }
+      height: 2.5rem;
+      fill: #333;
+      margin-right: 2rem; }
     .user-nav__menu--user .user-img {
       width: 6rem;
       height: 6rem;
