@@ -26,6 +26,10 @@ html {
     font-size: 50%; //1rem = 8px 8/16 = 50%
   }
 
+  @include respond(phone-extra-small) {
+    font-size: 47%; //1rem = 8px 8/16 = 50%
+  }
+
   scroll-behavior: smooth;
 }
 

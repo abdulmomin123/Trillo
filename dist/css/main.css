@@ -37,6 +37,9 @@ html {
   @media only screen and (max-width: 37.5em) {
     html {
       font-size: 50%; } }
+  @media only screen and (max-width: 21.875em) {
+    html {
+      font-size: 47%; } }
 
 body {
   background-image: linear-gradient(to right bottom, #ff3366, #ba265d);
@@ -640,22 +643,14 @@ body {
         flex-wrap: wrap; } }
     .gallery-full .img-gallery > *:not(:last-child) {
       margin-right: 0.5rem; }
+      @media only screen and (max-width: 37.5em) {
+        .gallery-full .img-gallery > *:not(:last-child) {
+          margin-bottom: 0.5rem; } }
     .gallery-full .img-gallery > * > *:not(:last-child) {
       margin-bottom: 0.5rem; }
     @media only screen and (max-width: 37.5em) {
       .gallery-full .img-gallery > * {
         flex: 0 0 100%; } }
-    @media only screen and (max-width: 37.5em) {
-      .gallery-full .img-gallery__col--1, .gallery-full .img-gallery__col--2 {
-        flex: 1; }
-      .gallery-full .img-gallery__col--3, .gallery-full .img-gallery__col--4 {
-        margin-top: 0.5rem;
-        display: flex;
-        flex-direction: row; }
-        .gallery-full .img-gallery__col--3 > *, .gallery-full .img-gallery__col--4 > * {
-          margin-right: 0.5rem; } }
-    .gallery-full .img-gallery__col--4 {
-      margin-top: 0; }
     .gallery-full .img-gallery img {
       position: relative;
       width: 100%;
