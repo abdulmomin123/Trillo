@@ -43,6 +43,13 @@ body {
   background-size: cover;
 }
 
+.preload * {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+}
+
 img,
 a {
   display: block;

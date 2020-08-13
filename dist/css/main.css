@@ -46,6 +46,12 @@ body {
   background-repeat: no-repeat;
   background-size: cover; }
 
+.preload * {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important; }
+
 img,
 a {
   display: block; }
@@ -430,6 +436,12 @@ body {
     .user-nav__menu {
       backdrop-filter: blur(2rem) brightness(110%);
       background: transparent; } }
+  @media only screen and (max-width: 37.5em) {
+    .user-nav__menu, .user-nav__menu--user {
+      background: rgba(255, 255, 255, 0.9) !important; }
+      @supports (backdrop-filter: blur(2rem) brightness(110%)) {
+        .user-nav__menu, .user-nav__menu--user {
+          backdrop-filter: blur(2rem) brightness(110%) !important; } } }
   .user-nav__menu-title {
     width: 100%;
     text-align: center;
