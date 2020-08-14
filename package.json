@@ -4,7 +4,6 @@
   "description": "The Trillo app",
   "main": "index.js",
   "scripts": {
-    "live-server": "live-server",
     "sass": "node-sass -w scss/main.scss -o dist/css/ --recursive",
     "start": "npm-run-all --parallel live-server sass",
     "compile:sass": "node-sass scss/main.scss dist/css/main.comp.css",

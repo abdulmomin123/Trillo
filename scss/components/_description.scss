@@ -35,14 +35,6 @@
       margin-right: 0.7rem;
       background: url(../img/chevron-thin-right.svg);
       background-size: cover;
-
-      @supports (-webkit-mask: url()) or (mask: url()) {
-        background: $color-primary;
-        -webkit-mask: url(../img/chevron-thin-right.svg);
-        -webkit-mask-size: cover;
-        mask: url(../img/chevron-thin-right.svg);
-        mask-size: cover;
-      }
     }
 
     @include respond(tab-land) {
